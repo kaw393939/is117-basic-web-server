@@ -31,3 +31,17 @@ test('the home page sends a successful response', async () => {
   expect(response.status).toBe(200);
   expect(await response.text()).toBe('Hello, IS117! Your web server is working.');
 });
+
+test('the about page explains what a web server does', async () => {
+  const response = await fetch(`${baseUrl}/about`);
+
+  expect(response.status).toBe(200);
+  expect(await response.text()).toBe('A web server receives a request and sends a response.');
+});
+
+test('a missing page sends a 404 response', async () => {
+  const response = await fetch(`${baseUrl}/missing-page`);
+
+  expect(response.status).toBe(404);
+  expect(await response.text()).toBe('Page not found.');
+});
