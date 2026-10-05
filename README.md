@@ -6,8 +6,6 @@ This is the **completed worked example** for Part 1 of IS117's first web server 
 
 ## Read, then build
 
-Follow the [assignment checklist](docs/assignment.md) and record this part’s prediction, result, and explanation in your student project. Running this reference alone is a comparison step.
-
 Start with [this part's lesson](docs/lessons/01-node-and-terminal.md). It explains the commands, code, expected output, and practice steps. Build the lesson in your own `is117-web-server` folder; use this separate `is117-reference` clone to compare completed work.
 
 Begin with Node.js, npm, an editor, and a terminal. This branch has no npm project or web server yet.
